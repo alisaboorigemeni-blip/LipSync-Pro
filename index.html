@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LipSync Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      :root {
+          --bg: #000000;
+          --ink: #ffffff;
+          --accent: #007AFF;
+          --surface: rgba(255, 255, 255, 0.05);
+          --glass-border: rgba(255, 255, 255, 0.1);
+          --glass-blur: blur(20px);
+          color-scheme: dark;
+      }
+      body { 
+        font-family: 'Geist', sans-serif; 
+        background-color: var(--bg); 
+        color: var(--ink); 
+        background-image: 
+            radial-gradient(circle at 20% 20%, rgba(0, 122, 255, 0.15) 0%, transparent 40%),
+            radial-gradient(circle at 80% 80%, rgba(94, 92, 230, 0.15) 0%, transparent 40%);
+        background-attachment: fixed;
+      }
+      .font-mono { font-family: 'Geist Mono', monospace; }
+      ::selection { background: var(--accent); color: var(--ink); }
+      /* Custom scrollbar for dark theme */
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "three/": "https://aistudiocdn.com/three@^0.181.2/",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "fflate": "https://aistudiocdn.com/fflate@^0.8.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

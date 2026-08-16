@@ -1,0 +1,8 @@
+{
+  "name": "LipSync Pro",
+  "description": "Automated AI-driven lip sync generator for 3D characters using shape keys.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}
